@@ -1,18 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-green: #5F825A;
-  --color-primary-yellow: #ABC38D;
-  --color-bg-primary: #5F825A;
-  --color-text-primary: #ABC38D;
+  --color-primary-dark: #022c22;  /* Deepest Green - Main BG */
+  --color-primary-green: #065f46; /* Rich Emerald - Secondary BG */
+  --color-primary-light: #22c55e; /* Vibrant Green - Hovers/Accents */
+  --color-text-main: #ecfccb;     /* Lime 100 - Main Text */
+  --color-text-muted: #86efac;    /* Green 300 - Secondary Text */
+  --color-accent-pop: #4ade80;    /* Bright Green - Icons/Buttons */
+  
+  /* Retaining variable names for backward compatibility initially, mapping to new palette */
+  --color-primary-yellow: #d9f99d; /* Replaced dull yellow with Lime-200 for highlights */
 }
 
 :root {
-  background-color: var(--color-primary-green);
-  color: var(--color-primary-yellow);
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-main);
 }
 
 body {
-  background-color: var(--color-primary-green);
-  color: #fff; /* Default text to white for readability, use yellow for accents/headers */
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-main);
+  font-family: 'Inter', sans-serif; /* Ensuring a clean font if not already set */
 }

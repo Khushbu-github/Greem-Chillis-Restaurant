@@ -48,8 +48,8 @@ const Home = () => {
             }}
           />
 
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-[var(--color-primary-green)]/60 md:bg-[var(--color-primary-green)]/50" />
+          {/* Dark Overlay with Gradient */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-primary-dark)]/90 via-[var(--color-primary-green)]/40 to-[var(--color-primary-dark)]/30" />
 
           {/* TEXT — Fully Responsive */}
           <div className="absolute inset-0 flex items-center z-10 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
@@ -60,11 +60,12 @@ const Home = () => {
               <h2
                 className={`inline-block max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-5xl 
                   text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl
-                  font-bold text-[var(--color-primary-yellow)] leading-tight 
+                  font-bold text-[var(--color-text-main)] leading-tight 
                   tracking-wide sm:tracking-wider md:tracking-widest
+                  drop-shadow-[0_4px_4px_rgba(0,0,0,0.5)]
                   ${slide.textPosition === "right" ? "ml-auto" : "mr-auto"}`}
                 style={{
-                  textShadow: "2px 2px 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.5)",
+                  textShadow: "0 0 30px rgba(6, 78, 59, 0.8), 0 0 10px rgba(0,0,0,0.5)",
                 }}
               >
                 {slide.text}
@@ -79,22 +80,22 @@ const Home = () => {
         onClick={goToPrevious}
         aria-label="Previous slide"
         className="absolute left-2 sm:left-4 md:left-6 top-1/2 -translate-y-1/2 z-20 
-                   bg-white/20 hover:bg-white/40 backdrop-blur-sm text-white 
+                   bg-black/20 hover:bg-[var(--color-primary-green)]/80 backdrop-blur-md text-white border border-white/20
                    p-2 sm:p-3 md:p-4 rounded-full transition-all
-                   active:scale-95 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary-yellow)]"
+                   active:scale-95 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-pop)]"
       >
-        <ChevronLeft className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" />
+        <ChevronLeft className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-[var(--color-text-muted)] group-hover:text-white" />
       </button>
 
       <button
         onClick={goToNext}
         aria-label="Next slide"
         className="absolute right-2 sm:right-4 md:right-6 top-1/2 -translate-y-1/2 z-20 
-                   bg-white/20 hover:bg-white/40 backdrop-blur-sm text-white 
+                   bg-black/20 hover:bg-[var(--color-primary-green)]/80 backdrop-blur-md text-white border border-white/20
                    p-2 sm:p-3 md:p-4 rounded-full transition-all
-                   active:scale-95 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary-yellow)]"
+                   active:scale-95 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-pop)]"
       >
-        <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" />
+        <ChevronRight className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 text-[var(--color-text-muted)] group-hover:text-white" />
       </button>
 
       {/* Slide Indicators */}
@@ -106,8 +107,8 @@ const Home = () => {
             aria-label={`Go to slide ${index + 1}`}
             className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 
               ${index === currentSlide
-                ? 'bg-[var(--color-primary-yellow)] w-6 sm:w-8'
-                : 'bg-white/50 hover:bg-white/80'
+                ? 'bg-[var(--color-accent-pop)] w-6 sm:w-8 shadow-[0_0_10px_var(--color-accent-pop)]'
+                : 'bg-white/30 hover:bg-white/60'
               }`}
           />
         ))}
