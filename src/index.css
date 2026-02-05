@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-green: #5F825A;
+  --color-primary-yellow: #ABC38D;
+  --color-bg-primary: #5F825A;
+  --color-text-primary: #ABC38D;
+}
+
+:root {
+  background-color: var(--color-primary-green);
+  color: var(--color-primary-yellow);
+}
+
+body {
+  background-color: var(--color-primary-green);
+  color: #fff; /* Default text to white for readability, use yellow for accents/headers */
+}
