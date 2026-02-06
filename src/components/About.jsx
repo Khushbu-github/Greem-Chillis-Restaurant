@@ -40,7 +40,7 @@ const About = () => {
             <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t-2 border-[var(--color-primary-yellow)]/30">
               <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center 
                            tracking-wide md:tracking-widest text-[var(--color-primary-yellow)] font-sans leading-tight">
-                Celebrating 17 Years in Business
+                Celebrating 20 Years in Business
               </p>
             </div>
           </div>

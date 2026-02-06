@@ -16,7 +16,7 @@ const Home = () => {
     { image: c2, text: "AUTHENTIC ANDHRA SPICES & FLAVORS", textPosition: "left" },
     { image: c3, text: "MUST TRY: GUNTUR CHICKEN & HYDERABADI DUM BIRYANI", textPosition: "left" },
     { image: c4, text: "NORTH INDIAN, MUGHLAI, CHINESE & MORE", textPosition: "left" },
-    { image: c5, text: "CELEBRATING 17 YEARS OF CULINARY EXCELLENCE", textPosition: "right" },
+    { image: c5, text: "CELEBRATING 20 YEARS OF CULINARY EXCELLENCE", textPosition: "right" },
   ];
 
   useEffect(() => {
