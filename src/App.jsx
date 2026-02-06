@@ -10,14 +10,26 @@ import Footer from './components/Footer';
 const App = () => {
   const [currentPage, setCurrentPage] = useState('home');
 
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'home':
+        return <Home />;
+      case 'about':
+        return <About />;
+      case 'collection':
+        return <Collection />;
+      case 'contact':
+        return <Contact />;
+      default:
+        return <Home />;
+    }
+  };
+
   return (
     <div>
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      <Home />
-      <About />
-      <Collection />
+      {renderPage()}
       <Testimonials />
-      <Contact />
       <Footer />
     </div>
   );
