@@ -3,9 +3,9 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // Images from src/assets/
 import c1 from "../assets/DIsh1.jpeg";
-import c2 from "../assets/Dish12.jpeg";
+import c2 from "../assets/DIsh12.jpeg";
 import c3 from "../assets/Dish2.jpeg";
-import c4 from "../assets/Dish14.jpeg";
+import c4 from "../assets/DIsh14.jpeg";
 import c5 from "../assets/Dish5.jpeg";
 
 const Home = () => {
@@ -49,7 +49,7 @@ const Home = () => {
           />
 
           {/* Dark Overlay with Gradient */}
-    
+
 
           {/* TEXT — Fully Responsive */}
           <div className="absolute inset-0 flex items-center z-10 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">
