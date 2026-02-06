@@ -40,6 +40,7 @@ const Contact = () => {
                   <span className="font-bold text-white">Address:</span><br />
                   17, 1st Cross Manjunatha Layout, Sri Rama Layout,<br />
                   Puttenahalli, opposite to RBI watertank,<br />
+                  <span className="text-[var(--color-primary-yellow)]">Near Indian Museum,</span><br />
                   JP Nagar 7th Phase, Arekere,<br />
                   Bengaluru, Karnataka 560078
                 </p>
