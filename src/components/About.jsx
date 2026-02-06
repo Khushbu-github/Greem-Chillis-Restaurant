@@ -53,7 +53,7 @@ const About = () => {
         style={{ backgroundImage: `url(${backgroundImg})` }}
       >
         {/* Dark overlay for depth */}
-        <div className="absolute inset-0 bg-[var(--color-primary-green)]/80"></div>
+       
 
         <div className="relative flex justify-center items-center px-4 sm:px-6 lg:px-8">
           <div className="w-full max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl 

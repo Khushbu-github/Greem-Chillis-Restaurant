@@ -49,7 +49,7 @@ const Home = () => {
           />
 
           {/* Dark Overlay with Gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-primary-dark)]/90 via-[var(--color-primary-green)]/40 to-[var(--color-primary-dark)]/30" />
+    
 
           {/* TEXT — Fully Responsive */}
           <div className="absolute inset-0 flex items-center z-10 px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24">

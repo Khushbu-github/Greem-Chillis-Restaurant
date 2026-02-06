@@ -8,7 +8,7 @@ const Footer = () => {
   const address = "17, 1st Cross Manjunatha Layout, Sri Rama Layout, Puttenahalli, opposite to rbi watertank JP Nagar 7th Phase, Arekere, Bengaluru, Karnataka 560078";
 
   return (
-    <footer className="bg-gradient-to-br from-[var(--color-primary-dark)] to-[var(--color-primary-green)] text-[var(--color-text-main)] py-16 font-sans">
+    <footer className="bg-gradient-to-b from-black/20 via-[var(--color-primary-green)]/10 to-black/40 text-[var(--color-text-main)] py-16 font-sans">
       <div className="max-w-7xl mx-auto px-6">
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
