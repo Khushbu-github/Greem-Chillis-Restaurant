@@ -24,7 +24,7 @@ const About = () => {
           <div className="order-1 md:order-2 text-[var(--color-primary-yellow)] leading-relaxed space-y-4 md:space-y-6 
                           text-sm sm:text-base md:text-lg font-sans px-2 sm:px-0">
             <p>
-              Greenchillies Restaurant brings you the authentic taste of Andhra style multicuisine dining. With over 20 years of culinary expertise, we have been serving delicious memories since 2009.
+              Greenchillies Restaurant brings you the authentic taste of Andhra style multicuisine dining. With over 20 years of culinary expertise, we have been serving delicious memories since 2006.
             </p>
             <p>
               Located in the heart of JP Nagar, Bangalore, near the Indian Museum, we are recognized as one of the best restaurants in JP Nagar. We specialize in offering a diverse menu that includes Chinese, South Indian, Mughlai, Andhra, and North Indian cuisines. Our dishes are crafted with passion and the finest ingredients to ensure a delightful experience.
