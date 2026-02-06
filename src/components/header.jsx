@@ -1,14 +1,49 @@
 // src/components/Header.jsx
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../assets/logo.png'; // Logo from assets
 
-const Header = ({ currentPage, setCurrentPage }) => {
+const Header = () => {
+  const [activeSection, setActiveSection] = useState('home');
+
   const navItems = [
     { id: 'home', label: 'HOME' },
     { id: 'about', label: 'ABOUT' },
     { id: 'collection', label: 'MENU' },
     { id: 'contact', label: 'CONTACT US' }
   ];
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerOffset = 80; // Height of fixed header
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  // Track active section based on scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = navItems.map(item => item.id);
+      const scrollPosition = window.scrollY + 150;
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sections[i]);
+        if (section && section.offsetTop <= scrollPosition) {
+          setActiveSection(sections[i]);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-[var(--color-primary-green)]/95 backdrop-blur-sm text-white z-50 border-b border-[var(--color-primary-yellow)]/20">
@@ -37,15 +72,15 @@ const Header = ({ currentPage, setCurrentPage }) => {
             {navItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => setCurrentPage(item.id)}
+                onClick={() => scrollToSection(item.id)}
                 className={`relative text-sm font-medium tracking-widest transition-all duration-300
-                  ${currentPage === item.id
+                  ${activeSection === item.id
                     ? 'text-[var(--color-primary-yellow)]'
                     : 'text-gray-300 hover:text-[var(--color-primary-yellow)]'
                   }`}
               >
                 {item.label}
-                {currentPage === item.id && (
+                {activeSection === item.id && (
                   <span className="absolute -bottom-2 left-0 w-full h-0.5 bg-[var(--color-primary-yellow)]"></span>
                 )}
               </button>
