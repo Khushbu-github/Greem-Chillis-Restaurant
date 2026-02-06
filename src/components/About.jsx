@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../assets/logo.png';
 import backgroundImg from '../assets/DIsh1.jpeg'; // Reusing Dish1 for background if c6 is missing
-import aboutImg from '../assets/Dish12.jpeg';
+import aboutImg from '../assets/DIsh12.jpeg';
 
 const About = () => {
   return (
@@ -53,7 +53,7 @@ const About = () => {
         style={{ backgroundImage: `url(${backgroundImg})` }}
       >
         {/* Dark overlay for depth */}
-       
+
 
         <div className="relative flex justify-center items-center px-4 sm:px-6 lg:px-8">
           <div className="w-full max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl 
