@@ -40,7 +40,7 @@ const Contact = () => {
                   <span className="font-bold text-white">Address:</span><br />
                   17, 1st Cross Manjunatha Layout, Sri Rama Layout,<br />
                   Puttenahalli, opposite to RBI watertank,<br />
-                  <span className="text-[var(--color-primary-yellow)]">Near Indian Museum,</span><br />
+                  <span className="text-[var(--color-primary-yellow)]">Near Indian Music Experience Museum,</span><br />
                   JP Nagar 7th Phase, Arekere,<br />
                   Bengaluru, Karnataka 560078
                 </p>
@@ -86,7 +86,7 @@ const Contact = () => {
           <div className="w-full h-64 sm:h-80 md:h-96 lg:h-full lg:min-h-96 rounded-2xl overflow-hidden shadow-2xl border-2 sm:border-4 border-[var(--color-primary-yellow)]/30">
             <iframe
               title="Greenchillies Restaurant Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.060183612348!2d77.5896!3d12.9038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU0JzEzLjciTiA3N8KwMzUnMjIuNiJF!5e0!3m2!1sen!2sin!4v1234567890" // Placeholder coordinates, user didn't provide exact lat/long but address. Using generic or approximate if needed, but keeping iframe structure.
+              src="https://maps.google.com/maps?q=https://maps.app.goo.gl/ZWH1vY7A4qMGjb2H8&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}

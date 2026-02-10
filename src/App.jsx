@@ -8,6 +8,8 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingButtons from './components/FloatingButtons';
 
+import SpecialOffer from './components/SpecialOffer';
+
 const App = () => {
   return (
     <div>
@@ -17,6 +19,9 @@ const App = () => {
       </div>
       <div id="about">
         <About />
+      </div>
+      <div id="offer">
+        <SpecialOffer />
       </div>
       <div id="collection">
         <Collection />
