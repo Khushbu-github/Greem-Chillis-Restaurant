@@ -86,7 +86,7 @@ const Contact = () => {
           <div className="w-full h-64 sm:h-80 md:h-96 lg:h-full lg:min-h-96 rounded-2xl overflow-hidden shadow-2xl border-2 sm:border-4 border-[var(--color-primary-yellow)]/30">
             <iframe
               title="Greenchillies Restaurant Location"
-              src="https://maps.google.com/maps?q=https://maps.app.goo.gl/ZWH1vY7A4qMGjb2H8&output=embed"
+              src="https://maps.google.com/maps?q=12.8922519,77.5814249&hl=en&z=14&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
